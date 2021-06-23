@@ -1,0 +1,31 @@
+languaje: node_js
+node_js:
+    - "stable"
+cache:
+  directories:
+    - node_modules
+
+job:
+    include:
+        - stage: setup
+          script: npm ci
+          only: master
+            
+        - stage: test
+          script: npm run test
+          only: master
+       
+        - stage: build
+          script: npm run build
+          artifacts:
+            paths: build
+            only: master
+
+        - stage: deploy
+          provider: heroku
+          skip_cleanup: true
+          api_key: 3ffb60ae-2c82-4a8e-b5f8-ad31a60d0e66
+          strategy: git
+          app: ingenieriasw
+          on:
+            repo: EstefaniaPerez/ingenieriasw
