@@ -21,7 +21,7 @@ job:
             paths: build
             only: master
 
-        - stage: deploy
+        deploy:
           provider: heroku
           skip_cleanup: true
           api_key: 3ffb60ae-2c82-4a8e-b5f8-ad31a60d0e66
