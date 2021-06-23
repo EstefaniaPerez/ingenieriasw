@@ -29,3 +29,8 @@ job:
             app: ingenieriasw
             on:
               branch: master
+
+notifications:
+  slack: integracionco-zdn1139:oC6tuCzY3e6PoP16Dux437oM
+  on_success: always
+  on_failure: always
