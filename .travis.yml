@@ -9,17 +9,17 @@ job:
     include:
         - stage: setup
           script: npm ci
-          only: master
+          
             
         - stage: test
           script: npm run test
-          only: master
+          
        
         - stage: build
           script: npm run build
           artifacts:
             paths: build
-            only: master
+            
         - stage: deploy
           deploy:
             provider: heroku
@@ -28,7 +28,7 @@ job:
             strategy: git
             app: ingenieriasw
             on:
-              branch: master
+              branch: develop
 
 notifications:
   slack: integracionco-zdn1139:oC6tuCzY3e6PoP16Dux437oM
