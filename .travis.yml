@@ -38,4 +38,4 @@ notifications:
 addons:
   sonarcloud: true
 script:
-  - sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=EstefaniaPerez -Dsonar.projectKey=ingenieriasw -Dsonar.sources='./ingenieriasw' -X
+  - sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=estefaniaperez -Dsonar.projectKey=EstefaniaPerez_ingenieriasw -Dsonar.sources='./src' -X
