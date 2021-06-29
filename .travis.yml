@@ -9,17 +9,17 @@ job:
     include:
         - stage: setup
           script: npm ci
-          
+          only: develop
             
         - stage: test
           script: npm run test
-          
+          only: develop
        
         - stage: build
           script: npm run build
           artifacts:
             paths: build
-            
+            only: develop
         - stage: deploy
           deploy:
             provider: heroku
