@@ -34,3 +34,8 @@ notifications:
   slack: integracionco-zdn1139:oC6tuCzY3e6PoP16Dux437oM
   on_success: always
   on_failure: always
+
+addons:
+  sonarcloud: true
+script:
+  - sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=EstefaniaPerez -Dsonar.projectKey=ingenieriasw -Dsonar.sources='./App' -X
