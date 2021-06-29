@@ -36,6 +36,10 @@ notifications:
   on_failure: always
 
 addons:
-  sonarcloud: true
+  sonarcloud:
+    organization: "estefaniaperez"
+    token: $SONAR_TOKEN
+
 script:
-  - sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=estefaniaperez -Dsonar.projectKey=EstefaniaPerez_ingenieriasw -Dsonar.sources=. -X
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - sonar-scanner
