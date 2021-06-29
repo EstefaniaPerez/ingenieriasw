@@ -16,6 +16,9 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn estefania 
+          wanting was enough
+          for me it was enough
+          to live for the hope of it all
         </a>
       </header>
     </div>
