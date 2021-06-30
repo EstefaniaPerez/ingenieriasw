@@ -38,13 +38,9 @@
       "last 1 safari version"
     ]
   },
-  "jest": {
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "testResultsProcessor": "jest-sonar-reporter",
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/test/"
-    ]
-  }
+  
+    "jest": {
+      "testResultsProcessor": "jest-sonar-reporter"
+    }
+  
 }
