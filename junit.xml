@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="0" errors="0" time="14.076">
+  <testsuite name="Comprobación de formulario" errors="0" failures="0" skipped="0" timestamp="2021-06-30T21:14:18" time="6.554" tests="1">
+    <testcase classname="Comprobación de formulario Deberia existir un boton submit" name="Comprobación de formulario Deberia existir un boton submit" time="0.512">
+    </testcase>
+  </testsuite>
+</testsuites>
