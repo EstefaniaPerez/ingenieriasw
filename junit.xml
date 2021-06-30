@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="./App.test.js">
-    <testcase classname="Comprobación de formulario Deberia existir un boton submit" name="Comprobación de formulario Deberia existir un boton submit" time="0.512">
+    <testcase name="Comprobación de formulario Deberia existir un boton submit" time="0.512">
     </testcase>
   </file>
 </testExecutions>
