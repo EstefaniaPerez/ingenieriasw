@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 
 describe('Comprobación de formulario', () =>{
-  it('Falta boton submit', () => {
+  it('Deberia existir un boton submit', () => {
     render( <App/>)
 
     expect(
