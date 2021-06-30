@@ -12,7 +12,7 @@ job:
           only: master
             
         - stage: test
-          script: npm run test
+          script: npm run test -- --coverage --testResultsProcessor=jest-sonar-reporter
           only: master
        
         - stage: build
