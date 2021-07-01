@@ -31,8 +31,8 @@ function App() {
                 </div>
               </div>
               <br></br>
-              
-              <button type="submit" className="btn btn-outline-primary .btn-block">Submit</button>
+
+          
               <p className="forgot-password text-right">
                 Forgot password?
               </p>
