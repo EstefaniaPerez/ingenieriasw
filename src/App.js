@@ -32,7 +32,7 @@ function App() {
               </div>
               <br></br>
 
-              
+             
               <p className="forgot-password text-right">
                 Forgot password?
               </p>
